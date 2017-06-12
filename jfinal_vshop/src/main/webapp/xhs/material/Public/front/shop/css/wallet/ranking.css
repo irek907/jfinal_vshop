@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	background:url(../../images/wallet/icon_bg01.png) repeat-y;
+	background-size:100%;
+}
+header,none,.top table td {
+	text-align:center;
+}
+/*正文内容*/
+section {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+}
+section,.menu table {
+	border-bottom:#dfe5e8 1px solid;
+}
+.menu {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+}
+.top {
+	height:50px;
+}
+.top table td,footer ul li,.menu table td {
+	font-size:0.75em;
+}
+.top table {
+	width:96%;
+	padding-right:4%;
+}
+.top table td {
+	width:24%;
+	line-height:50px;
+}
+.top table td p {
+	cursor:pointer;
+	width:67px;
+	background:url(../../images/wallet/icon06.gif) right center no-repeat;
+}
+.icon_up{background:url(../../images/wallet/icon_up.png) right center no-repeat!important;}
+.top table td p:click {
+	color:#F00;
+	background:url(../../images/wallet/icon07.gif) right center no-repeat;
+}
+.none {
+	height:130px;
+	line-height:130px;
+	font-size:2.5em;
+}
+.menu table {
+	width:100%;
+	border-bottom:#dfe5e8 1px solid;
+	padding:10px 1.5%;
+}
+.menu table td {
+	padding-right:5px;
+	font-size:0.75em;
+}
+.menu table td img {
+	width:40px;
+}
+.menu table td span {
+	color:#999;
+}
+.menu strong {
+	color:#fd0336;
+	font-size:1.2em;
+}
+.menu p.top1 {
+	background:url(../../images/wallet/icon10.png) center no-repeat;
+}
+.menu p {
+	width:auto;
+	padding:3px 6px;
+	font-weight:bold;
+	color:#fff;
+	font-size:1.1em;
+	background:#F33;
+	border-radius:20px;
+}
+
+
+

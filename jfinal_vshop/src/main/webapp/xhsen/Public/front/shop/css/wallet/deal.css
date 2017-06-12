@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"宋体";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	line-height:45px;
+	background:#02a0e7;
+	height:45px;
+}
+header,.top table td,footer ul li {
+	text-align:center;
+}
+header,footer ul li {
+	color:#fff;
+}
+/*正文内容*/
+section {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+}
+section,.menu table {
+	border-bottom:#dfe5e8 1px solid;
+}
+.top {
+	height:50px;
+}
+.top table td,footer ul li,.menu table td {
+	font-size:0.75em;
+}
+.top table {
+	width:96%;
+	padding-right:4%;
+}
+.top table td {
+	width:24%;
+	line-height:50px;
+}
+.top table td p {
+	cursor:pointer;
+	width:67px;
+	background:url(../../images/wallet/icon06.gif) right center no-repeat;
+}
+.top table td p:click {
+	color:#F00;
+	background:url(../../images/wallet/icon07.gif) right center no-repeat;
+}
+.menu {
+	margin-top:10px;
+	border-top:#dfe5e8 1px solid;
+}
+.menu table {
+	width:100%;
+}
+.menu table td img {
+	width:40px;
+}
+.a,.b,.money {
+	padding:5px 2%;
+}
+.a {
+	width:20%;
+}
+.b {
+	width:50%;
+}
+.c {
+	width:18%;
+}
+.c,.a {
+	text-align:center;
+}
+.money {
+	width:60px;
+	height:46px;
+	border-left:#e2e8eb 1px solid;
+}
+.menu dt,.money span,.menu td strong {
+	color:#fd325c;
+}
+.menu td strong {
+	font-size:1.3em;
+}
+/*底部内容*/
+footer {
+	position:relative;
+}
+footer ul {
+	position: fixed;
+	bottom:20px;
+	left:50%;
+	width:70%;
+	margin-left:-35%;
+}
+footer ul li {
+	width:40%;
+	height:30px;
+	padding:0 8px;
+	line-height:30px;
+	background:#02a0e7;
+	float:left;
+}
+footer ul li.left {
+	border-right:#fff 1px solid;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+}
+footer ul li.right {
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}

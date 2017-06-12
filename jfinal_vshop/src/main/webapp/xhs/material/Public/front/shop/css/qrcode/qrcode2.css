@@ -1,0 +1,10 @@
+body{ margin:0; font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","Helvetica", "Arial", "sans-serif"; font-size:14px;}
+.border{max-width:640px; min-width:320px; margin:0 auto;}
+.top{ background:url(../../images/hong.png); height:220px; color:#FFFFFF }
+.toux{ float: left; margin-left:20px; margin-top:20px; }
+.toux img{border-radius: 100px;width: 73px; height: 73px;}
+.top p{float: left; font-size: 17px; line-height: 40px; text-align: left; padding-left: 30px; padding-top:25px;}
+.top p span{color:#FF0000}
+.info{text-align:center; padding:60px 40px 20px 40px; font-size:17px; color:#FFFFFF; background:url(../../images/hei.png); position:relative; margin-top:-120px; }
+.info .relative{position:relative; top:-20px; width:80px; height:80px; border-radius: 100px;}
+.info .qrcode{margin:0 auto; text-align:left; width:240px; height:240px; background:url(../../images/kuang.png) center top no-repeat;background-size:100% 100%;}

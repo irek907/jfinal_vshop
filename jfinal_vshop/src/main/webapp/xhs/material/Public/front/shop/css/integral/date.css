@@ -1,0 +1,71 @@
+.Calendar { 
+	font-family:Verdana; 
+	background-color:#EEE; 
+	text-align:center;
+	height: 320px;
+	line-height:1.5em; 
+}
+.Calendar .icons{
+	display: block;
+	width:40px;
+	height:40px;
+	background: url(../../images/icons4.png) no-repeat center -300px;
+	-webkit-background-size:50px auto;
+}
+.Calendar .icons_after{
+	background-position: center -350px;
+}
+.Calendar header{
+	font-size:14px;
+	color:#888e8e;
+	line-height:50px;
+	height:50px;
+	background:#ffffff;
+	box-shadow: 0 5px 5px rgba(100,100,100,0.1);
+}
+.Calendar a{ 
+	color:#0066CC; 
+} 
+.Calendar table{ 
+	width:280px;
+	margin:auto;
+	border:0; 
+} 
+.Calendar table thead{color:#acacac;} 
+.Calendar table td {
+	color:#989898;
+	border:1px solid #ecf9fa;
+	width:40px;
+	height:40px;
+	margin:1px;
+	background: #ffffff;
+	-webkit-box-sizing:border-box;
+}
+.Calendar thead td, .Calendar td:empty{
+	background:none;
+	border:0;
+}
+.Calendar thead td{
+	color:#72bec9;
+	font-size:13px;
+	font-weight:bold;
+}
+#idCalendarPre{ 
+	cursor:pointer; 
+	float:left; 
+} 
+#idCalendarNext{ 
+	cursor:pointer; 
+	float:right;
+} 
+
+#idCalendar td a.checked{ 
+	display: block;
+	height:100%;
+	border:1px solid #58c4d1; 
+	line-height:38px;
+	color:#989898;
+}
+#idCalendar td.onToday, #idCalendar td.onToday a{
+	color:#ff3600!important;
+}

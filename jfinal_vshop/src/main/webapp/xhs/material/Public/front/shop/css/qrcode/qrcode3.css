@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width:449px){
+
+}
+* {
+	margin:0 auto;
+	padding:0;
+}
+body {
+	font-family:"宋体";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#666;
+	position:relative;
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+img {
+	max-width:100%;
+}
+
+#marp {
+	width:100%;
+}
+header {
+	font-weight:bold;
+	width:100%;
+	padding-top:9px;
+	height:80px;
+	font-size:0.98em;
+}
+header h1,header nav {
+	float:left;
+}
+header h1 {
+	padding-left:6%;
+}
+header nav {
+	padding-left:15px;
+}
+header nav li {
+	line-height:40px;
+}
+header nav li span {
+	color:#02a0e7;
+}
+section {
+	width:100%;
+	background:#02a0e7 url(../../images/qrcode/icon_bg.png) no-repeat;
+	background-size:100%;
+	overflow:hidden;
+	padding-bottom:20px;
+}
+footer p,h2 {
+	text-align:center;
+}
+h2 {
+	padding-top:28px;
+	padding-bottom:16px;
+}
+section p {
+	background:#fff;
+	color:#252525;
+	opacity:0.9;
+	font-weight:bold;
+	line-height:35px;
+	margin:0 3%;
+	font-size:1.2em;
+	border-radius:5px;
+	padding:10px;
+	text-indent:2em;
+}
+section table {
+	width:65%;
+	margin:0 auto;
+}
+.bd01 {
+	background:url(../../images/qrcode/icon06.png) bottom repeat-x;
+}
+.bd02 {
+	background:url(../../images/qrcode/icon08.png) right repeat-y;
+}
+.bd03 {
+	background:url(../../images/qrcode/icon09.png) left repeat-y;
+}
+.bd04 {
+	background:url(../../images/qrcode/icon11.png) top repeat-x;
+}
+.bg5 {
+	background:#fff;
+}
+.bg6 {
+	background:url(../../images/qrcode/icon05.png) right bottom no-repeat;
+}
+.bg7 {
+	background:url(../../images/qrcode/icon07.png) left bottom no-repeat;
+}
+.bg8 {
+	background:url(../../images/qrcode/icon10.png) right top no-repeat;
+	width:22px;
+}
+.bg9 {
+	background:url(../../images/qrcode/icon12.png) left top no-repeat;
+	width:28px;
+	height:29px;
+}
+.text {
+	color:#fff;
+	font-size:1.1em;
+	text-align:center;
+	font-weight:bold;
+	padding:5px 0 20px;
+}
+.details,.text {
+	text-align:center;
+}
+.details {
+	background:url(../../images/qrcode/icon_bg5.png) no-repeat;
+	background-size:100%;
+	padding-top:20%;
+	padding-bottom:20%;
+	width:60%;
+	padding-left:11%;
+	padding-right:11%;
+	position:relative;
+	margin:0 auto;
+	
+/*
+footer {
+	width:100%;
+	background:#fff;
+}
+footer p {
+	height:68px;
+	line-height:68px;
+	color:#0a20c6;
+	font-weight:bold;
+	font-size:1.1em;
+}*/

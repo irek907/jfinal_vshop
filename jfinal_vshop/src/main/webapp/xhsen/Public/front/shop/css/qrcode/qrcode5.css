@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width:449px){
+
+}
+* {
+	margin:0 auto;
+	padding:0;
+}
+body {
+	font-family:"宋体";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#666;
+	position:relative;
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+img {
+	max-width:100%;
+}
+.bor {
+	border:#fff 3px solid;
+}
+#marp {
+	width:100%;
+}
+.top {
+	position:relative;
+}
+.top img {
+	width:100%;
+}
+header {
+	width:100%;
+	font-weight:bold;
+	margin:0 auto;
+	padding-top:15px;
+	font-size:0.98em;
+	position:absolute;
+	top:1%;
+	left:2%;
+}
+header h1,header nav {
+	float:left;
+}
+header table {
+	width:100%;
+	padding-left:3%;
+}
+header h1 {
+	padding-top:5px;
+	padding-left:6%;
+	padding-bottom:10%;
+}
+header nav {
+	padding-left:15px;
+}
+header nav li {
+	line-height:35px;
+}
+header nav li span {
+	color:#fff;
+}
+section {
+	width:100%;
+	overflow:hidden;
+	padding-bottom:20px;
+}
+footer p,h2,h1 {
+	text-align:center;
+}
+h1 span {
+	font-size:1.4em;
+}
+h2 {
+	padding-left:10%;
+}
+section p {
+	color:#252525;
+	font-weight:bold;
+	line-height:35px;
+	padding:10px;
+	text-indent:2em;
+	font-size:1.2em;
+}
+section table {
+	width:94%;
+	margin:0 auto;
+}
+article {
+	width:100%;
+}
+.td1 {
+	padding-left:10px;
+}
+#code {
+	padding-top:9px;
+}
+.details,.text {
+	text-align:center;
+}
+.details {
+	background:url(../../images/qrcode/icon_bg4.jpg) no-repeat;
+	background-size:100%;
+	padding-top:15%;
+	padding-bottom:20%;
+	width:60%;
+	padding-left:11%;
+	padding-right:11%;
+	position:relative;
+	margin:0 auto;
+}
+.fingerprint {
+	position:absolute;
+	top:55%;
+	left:50%;
+	width:30%;
+	margin-left:-15%;
+	margin-top:-20%;
+}
+.text {
+	color:#035e02;
+	font-weight:bold;
+}

@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html><html lang="zh-CN"><head>
+    <title>weixin://private/setresult/SCENE_FETCHQUEUE&amp;eyJmdW5jIjoicHJlVmVyaWZ5SlNBUEkiLCJwYXJhbXMiOnsidmVyaWZ5SnNBcGlMaXN0IjpbImNoZWNrSnNBcGkiLCJtZW51OnNoYXJlOnRpbWVsaW5lIiwibWVudTpzaGFyZTphcHBtZXNzYWdlIiwibWVudTpzaGFyZTpxcSIsIm1lbnU6c2hhcmU6d2VpYm9BcHAiLCJoaWRlTWVudUl0ZW1zIiwic2hvd01lbnVJdGVtcyIsImhpZGVBbGxOb25CYXNlTWVudUl0ZW0iLCJzaG93QWxsTm9uQmFzZU1lbnVJdGVtIiwidHJhbnNsYXRlVm9pY2UiLCJzdGFydFJlY29yZCIsInN0b3BSZWNvcmQiLCJvblJlY29yZEVuZCIsInBsYXlWb2ljZSIsInBhdXNlVm9pY2UiLCJzdG9wVm9pY2UiLCJ1cGxvYWRWb2ljZSIsImRvd25sb2FkVm9pY2UiLCJjaG9vc2VJbWFnZSIsImltYWdlUHJldmlldyIsInVwbG9hZEltYWdlIiwiZG93bmxvYWRJbWFnZSIsImdldE5ldHdvcmtUeXBlIiwib3BlbkxvY2F0aW9uIiwiZ2VvTG9jYXRpb24iLCJoaWRlT3B0aW9uTWVudSIsInNob3dPcHRpb25NZW51IiwiY2xvc2VXaW5kb3ciLCJzY2FuUVJDb2RlIiwiZ2V0QnJhbmRXQ1BheVJlcXVlc3QiLCJvcGVuUHJvZHVjdFZpZXdXaXRoUGlkIiwiYmF0Y2hBZGRDYXJkIiwiY2hvb3NlQ2FyZCIsImJhdGNoVmlld0NhcmQiXSwiYXBwSWQiOiJ3eDRiZTM0NWI0NjU0NmQ3ZmYiLCJ2ZXJpZnlBcHBJZCI6Ind4NGJlMzQ1YjQ2NTQ2ZDdmZiIsInZlcmlmeVNpZ25UeXBlIjoic2hhMSIsInZlcmlmeVRpbWVzdGFtcCI6IjE0NjU1NjcyMTEiLCJ2ZXJpZnlOb25jZVN0ciI6IlpWd2pPSUtQdkVyemtXR2oiLCJ2ZXJpZnlTaWduYXR1cmUiOiI2MDY4QUQxQjkzNjZENTlFQjUwMTdERTBCN0RCOTIzNkQyMzM0MzAxIn0sIl9fbXNnX3R5cGUiOiJjYWxsIiwiX19jYWxsYmFja19pZCI6IjEwMDAifQ==</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="eric.wu" name="author">
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="http://stc.weimob.com/img/favicon.ico">
+    <!--Start-->
+    <link href="http://stc.vshop.weimob.com/css/reset.css?v=-1079464385" rel="stylesheet">
+    <link href="http://stc.vshop.weimob.com/css/common.css?v=-1079464385" rel="stylesheet">
+    <link href="http://stc.vshop.weimob.com/css/idangerous.swiper.css?v=-1079464385" rel="stylesheet">
+
+    <link href="http://stc.vshop.weimob.com/css/widget_menu.css?v=-1079464385" rel="stylesheet">
+    <link href="http://stc.vshop.weimob.com/css/widget_public.css?v=-1079464385" rel="stylesheet">
+    <link href="http://stc.vshop.weimob.com/css/widget_sku.css?v=-1079464385" rel="stylesheet">
+
+    <link href="/vshop/Assets/css/font-awesome.css?v=-1079464385" rel="stylesheet">
+    <link href="/vshop/Assets/css/wicons.css?v=-1079464385" rel="stylesheet">
+    <link href="/vshop/Assets/css/weimobfont2.css?v=-1079464385" rel="stylesheet">
+    <link href="/vshop/Assets/css/fxfont.css?v=-1079464385" rel="stylesheet">
+
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://stc.vshop.weimob.com/lib_cmd/zeptos.js?v=-1079464385"></script>
+    <script src="http://stc.vshop.weimob.com/lib/idangerous_swiper_min.js?v=-1079464385"></script>
+
+    <!--End-->
+    
+    <script>
+      
+        localStorage.removeItem("glist");
+        var APP = {
+            ismobile:true,
+            page: "home",
+            message: true,
+            goTop: true,
+            AId: 55768187,
+            //limit:{"val":0,"name":"滋饮堂"}, //val: 1-只允许粉丝购买
+            attention:{"val":0,"AttentionId":"bjziyintang","URL":""}, //关注引导的微信公众号 val:0-二维码 1-链接
+            AgentId:"",
+            EmployeesId:"",
+            VKId:"", 
+            urls: {
+                getGoodJson:"/vshop/55768187/Ajax/Get/GetGoodsJsonById",
+                getGoodsPrice:"/vshop/55768187/Ajax/Get/GetPriceGoodsIds",
+                getIslimit:"/vshop/55768187/Ajax/Get/GetIsLimitBuy",
+                getCoupon:"/vshop/55768187/Ajax/UserCenter/CouponAjax/ReceiveCoupon", //Receive-领取 Received-已领取 Leadend-已领完
+                getCouponAttr:"/vshop/55768187/Ajax/UserCenter/CouponAjax/GetUserCouponInfo",
+                addPraiseUrl:"/vshop/55768187/Ajax/DecorateAjax/AddPraiseCount",
+                getReadPraiseCountUrl:"/vshop/55768187/Ajax/DecorateAjax/GetReadCountPraiseCount"
+
+            },
+            WeChat:{
+                APPShareTitle : "滋饮堂商城",
+                APPShareDes : "推荐一家好店，快来瞧一瞧",
+                FriendShareTitle : "滋饮堂商城",
+                FriendShareDes : "推荐一家好店，快来瞧一瞧",
+                WeiboShareTitle: "滋饮堂商城",
+                WeiboShareDes : "推荐一家好店，快来瞧一瞧",
+                QQShareTitle: "滋饮堂商城",
+                QQShareDesc : "推荐一家好店，快来瞧一瞧",
+            }
+        }
+        var openid = "";
+        var stat_webtype = "index";
+        var Shops = {};
+        var ScreenWidth = $(window).width();
+    </script>
+    <script src="http://stc.vshop.weimob.com/js/widget_public.js?v=-1079464385"></script>
+    <script src="http://stc.vshop.weimob.com/lib_cmd/sea.js?v=-1079464385"></script>
+    <script>
+        (function(l){
+            seajs.config({
+                base:"http://stc.vshop.weimob.com/",
+                map: [
+                    [ ".js", (l&&l[1]||"")+".js?v=-1079464385"]
+                ]
+            });
+            seajs.use("js_cmd/widget_goods");
+        })(location.href.match(/de(\-\d+)bug/));
+    </script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container index">
+
+        <header data-role="header">
+        </header>
+        <section data-role="body" class="body" style="min-height: 568px;">
+
+            <div type="2" id="2041913" data-role="widget" data-widget="notice_1" class="notice_1" style="background:#FFFFCC; color:#FFA314">
+  <div class="widget_wrap">
+    <div class="scoller_notices">
+      <span class="notices" data-speed="20" style="position: relative; left: 296px;">
+            尊敬的滋饮堂忠实用户邀请您成为会员可以享受更多折扣哦，
+          </span>
+    </div>
+  </div>
+</div><div type="1" id="Mod_1841742" data-role="widget" data-widget="slider_1" class="slider_1"><section class="widget_wrap"><div class="swiper-container" style="cursor: -webkit-grab;"><div class="swiper-wrapper" style="width: 2560px; transform: translate3d(-1920px, 0px, 0px); -webkit-transform: translate3d(-1920px, 0px, 0px); transition: 0.8s; -webkit-transition: 0.8s; height: 320px;"><div class="swiper-slide swiper-slide-duplicate" loop="1" style="width: 640px; height: 320px;"><a href="javascript:;" data-fx="Modulefx"><img src="http://shopimg.weimob.com/55768187/Group/1604041938146250.jpg"></a></div><div class="swiper-slide" loop="1" style="width: 640px; height: 320px;"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=108801" data-fx="Modulefx"><img src="http://shopimg.weimob.com/55768187/Group/1604041938040937.jpg"></a></div>
+<div class="swiper-slide" loop="1" style="width: 640px; height: 320px;"><a href="javascript:;" data-fx="Modulefx"><img src="http://shopimg.weimob.com/55768187/Group/1604041938146250.jpg"></a></div>
+<div class="swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active" loop="1" style="width: 640px; height: 320px;"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=108801" data-fx="Modulefx"><img src="http://shopimg.weimob.com/55768187/Group/1604041938040937.jpg"></a></div></div><div class="pagination"><span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span class="swiper-pagination-switch"></span></div></div></section><script>Widget.slider_1('Mod_1841742',3000)</script></div><div type="1" id="1992211" data-role="widget" data-widget="menu_s" class="menu_s"><div class="widget_wrap"><ul><li style="background:#f6f6f6" loop="1"><a href="javascript:;" class="on" style="color:#f1c232" data-fx="Modulefx"><span class="icon-yen"></span>
+              全网最低
+            </a></li>
+<li style="background:#f6f6f6" loop="1"><a href="javascript:;" class="on" style="color:#f1c232" data-fx="Modulefx"><span class="icon-truck"></span>
+              极速发货
+            </a></li>
+<li style="background:#f6f6f6" loop="1"><a href="javascript:;" class="on" style="color:#f1c232" data-fx="Modulefx"><span class="icon-shield"></span>
+              正品保证
+            </a></li>
+<li style="background:#f6f6f6" loop="1"><a href="javascript:;" class="on" style="color:#f1c232" data-fx="Modulefx"><span class="icon-home"></span>
+              品牌直营
+            </a></li>
+</ul></div></div><div type="1" data-role="widget" id="Mod_1848428" data-widget="sale" class="sale"><section class="widget_wrap"><div class="swiper-container" style="height: 136.4px;"><div class="swiper-wrapper" style="width: 620px; height: 136px;"><div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 310px; height: 136.4px;"><div class="saleCon"><h5 class="tishi">店铺优惠券</h5><p class="tishi">先领券 再购物</p></div></div><div class="swiper-slide coupon swiper-slide-visible" data-id="19d9a932d11a4a70868daac07dd925fe" data-limit="2" data-url="" data-type="0" loop="1" style="width: 310px; height: 136.4px;" data-state="Receive"><div class="saleCon">
+                <h3><span>￥</span>20</h3><p>满100可用</p>
+              </div><div class="sale_buttons"></div><img src="/vshop/Assets/imgs/coupon/Color1.png"></div>
+</div></div></section><div class="saleLeft salePrompt"><span class="vhidden"></span></div><div class="saleRight salePrompt"><span class="vhidden"></span></div><script>Widget.Sale('Mod_1848428')</script></div><div type="2" id="1992253" data-role="widget" data-widget="line_2" class="line_2">
+  <div class="widget_wrap" style="padding:0 15px;">
+    <svg width="100%" height="30">
+      <line x1="0" y1="15" x2="100%" y2="15" style="stroke:#c8c8c8;stroke-width:1;stroke-dasharray:1;"></line>
+    </svg>
+  </div>
+</div><div type="3" id="1848431" data-role="widget" data-widget="title_30" class="title_30">
+  <div class="widget_wrap" style="background:#FFFFFF;">
+    <label>
+      <p style="color:#1A1A1A">新品推荐</p>
+      <div class="labelb" style="border-top-color:#1A1A1A;"></div>
+      <div class="labela" style="border-top-color:#1A1A1A;"></div>
+    </label>
+  </div>
+</div><div type="2" id="Mod_1841776" data-role="widget" data-widget="goodsList_2" class="goodsList_2"><div class="widget_wrap"><ul><li class="goodlists" loop="1"><div class="goodlistsimg"><div class="img_wrap"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=108801"><img class="goods-lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=" style="background-image: url(http://shopimg.weimob.com/55768187/Goods/1605131829327931.png);"></a><span name="goodsdetailspan" class="tag">满送</span></div></div><div class="goodlistscon"><p class="title"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=108801">滋饮堂--本草精炖【红豆鲜冻燕窝】暖心润颜、爱美之选，净含量160克</a></p><label class="price">￥148</label><div class="shop_text"><a href="javascript:;" vid="108801" vprice="148" vmember="False" class="goods_Buy">购买</a></div></div></li>
+<li class="goodlists" loop="1"><div class="goodlistsimg"><div class="img_wrap"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109187"><img class="goods-lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=" style="background-image: url(http://shopimg.weimob.com/55768187/Goods/1605131828511875.png);"></a><span name="goodsdetailspan" class="tag">满送</span></div></div><div class="goodlistscon"><p class="title"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109187">滋饮堂--本草精炖【黑芝麻鲜冻燕窝】补充维生素E、年轻的秘密，净含量160克</a></p><label class="price">￥148</label><div class="shop_text"><a href="javascript:;" vid="109187" vprice="148" vmember="False" class="goods_Buy">购买</a></div></div></li>
+<li class="goodlists" loop="1"><div class="goodlistsimg"><div class="img_wrap"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109211"><img class="goods-lazyload" data-original="http://shopimg.weimob.com/55768187/Goods/1605131828358218.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=);"></a><span name="goodsdetailspan" class="tag">满送</span></div></div><div class="goodlistscon"><p class="title"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109211">滋饮堂本草精炖【贵妃米浆鲜冻燕窝】孕妈之选、一人吃两人补，净含量160克</a></p><label class="price">￥148</label><div class="shop_text"><a href="javascript:;" vid="109211" vprice="148" vmember="False" class="goods_Buy">购买</a></div></div></li>
+<li class="goodlists" loop="1"><div class="goodlistsimg"><div class="img_wrap"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109177"><img class="goods-lazyload" data-original="http://shopimg.weimob.com/55768187/Goods/1605131829150579.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQIW2NkAAIAAAoAAggA9GkAAAAASUVORK5CYII=);"></a><span name="goodsdetailspan" class="tag">满送</span></div></div><div class="goodlistscon"><p class="title"><a href="http://55768187.m.weimob.com/vshop/55768187/Goods/GoodsDetailNew3?id=109177">滋饮堂--本草精炖【金瓜鲜冻燕窝】睡眠好、自然美，净含量160克</a></p><label class="price">￥148</label><div class="shop_text"><a href="javascript:;" vid="109177" vprice="148" vmember="False" class="goods_Buy">购买</a></div></div></li>
+</ul></div><script>Widget.Goods('Mod_1841776')</script></div><div type="2" id="1841788" data-role="widget" data-widget="WeChat_footer" class="WeChat_footer">
+  <div class="widget_wrap">
+    <a class="meta_primary hidden" href="">阅读原文</a>
+    <div class="meta_primary">
+          阅读 <span class="Read_Num" data-module="1841788">100000+</span></div>
+    <span class="meta_primary tips_global">
+      <a onclick="javascript:Widget.Praise(this)" data-num="" data-module="1841788">
+        <i class="icon_praise_gray"></i>
+        <span class="praise_num">629</span>
+      </a>
+    </span>
+  </div>
+  <div class="rich_tips with_line title_tips ">
+    <span class="tips">广告</span>
+  </div>
+  <div class="adpic ">
+    <a href="">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAADCAYAAABF//VLAAAAEklEQVQIW2NkIAEwkqCWgSTFAAGVAATJlqdVAAAAAElFTkSuQmCC" style="background-image:url(http://shopimg.weimob.com/55768187/Group/1604011522061718.jpg)">
+    </a>
+  </div>
+</div>
+            
+        </section>
+        <footer data-role="footer" style="padding-bottom: 53px;">
+            
+
+<div data-role="copyright">
+    
+    <script type="text/javascript" src="http://stc.weimob.com/src/jQuery.js?2014-08-28"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    
+    <script type="text/javascript" src="http://stc.weimob.com/src/st/base64.js?v=10101010"></script>
+    <script type="text/javascript" src="http://stc.weimob.com/src/st/st.js?v=10101010"></script>
+    <script type="text/javascript">
+        var isGoodsDetial = 0;//是否详情页
+
+        setCookie("stat_pid", "55768187");
+        setCookie("stat_bid", "");
+        try {
+            if ((typeof (APP) != "undefined" && typeof (APP.openid) != "undefined" && APP.openid) || openid) {
+                setCookie("stat_openid", openid || APP.openid);
+
+            }
+            setCookie("stat_webtype", stat_webtype);
+        }
+        catch (e) { }
+        setCookie("stat_module", "vshop");
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString() + ";path=/";
+        }
+        //dev
+        //statisticServerPath:http://112.124.11.130
+        //online:
+        //statisticServerPath:http://statistic.weimob.com
+
+        var statisticServerPath = "http://statistic.weimob.com";
+        st.push("_triggerEvent", {
+            "is_statistic_on": "on", //开关
+            "statisticServerPath": statisticServerPath + "/wm.js", //统计地址
+            "memcServerPath": statisticServerPath + "/memc?cmd=get", //缓存地址
+            "stat_action": "loadPage",  //统计动作类型
+            "stat_optValue": ""    //参数值
+        });
+    </script>
+    
+
+    <script>
+        (typeof(APP) == "undefined") ? APP = {}:"";
+        APP.limit = {"val":0,"name":"滋饮堂"};
+        APP.attention = {"val":0,"AttentionId":"bjziyintang","URL":""};
+    </script>
+</div>
+
+        </footer>
+
+        
+
+
+<!--1-->
+
+
+
+<!--2-->
+
+<div data-role="widget" data-widget="menu_2" class="menu_2">
+    <div class="widget_wrap">
+        <ul>
+            
+            <li style="background: #d9d9d9"><a href="http://55768187.m.weimob.com/vshop/55768187/index" class="on" style="color: #000000">
+                <span class="icon-wmfont wm-home"></span>
+                主页</a>
+            </li>
+            
+            <li style="background: #d9d9d9"><a href="http://55768187.m.weimob.com/vshop/55768187/ShopTemplate/ClassifyTemplate/Classify2" class="on" style="color: #000000">
+                <span class="icon-th-large"></span>
+                分类</a>
+            </li>
+            
+            <li style="background: #D9D9D9"><a href="http://55768187.m.weimob.com/vshop/55768187/UserCenter/MyShoppingCartNew" class="on" style="color: #000000">
+                <span class="icon-shopping-cart"></span>
+                购物车</a>
+            </li>
+            
+            <li style="background: #d9d9d9"><a href="http://55768187.m.weimob.com/vshop/55768187/Order/MyOrderNew" class="on" style="color: #000000">
+                <span class="icon-wmfont wm-weik"></span>
+                订单</a>
+            </li>
+            
+            <li style="background: #d9d9d9"><a href="http://55768187.m.weimob.com/vshop/55768187/UserCenter/UserCenter" class="on" style="color: #000000">
+                <span class="icon-user"></span>
+                个人中心</a>
+            </li>
+            
+        </ul>
+    </div>
+    <script>
+        $("footer").css("padding-bottom", "53px");
+    </script>
+</div>
+
+        <!---------------------->
+        <div data-role="widget" data-widget="sku_dialog" class="sku_dialog hidden" id="sku_dialog" ontouchmove="return false;">
+            <div class="widget_mask"></div>
+            <div class="widget_wrap">
+                <ul>
+                    <li>
+                        <dl class="sku_header tbox">
+                            <dd>
+                                <div class="title_pic">
+                                    <span class="img_wrap">
+                                        <img src="" id="goodsimg"></span>
+                                </div>
+                            </dd>
+                            <dd>
+                                <span class="sku_close" id="sku_close">&nbsp;</span>
+                                <div class="sku_Choice">
+                                    <div>
+                                        <p id="label_sku_price">&nbsp;</p>
+                                        <p id="label_sku_Stock">库存</p>
+                                        <p id="label_sku_title">&nbsp;</p>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <section id="scroller_sku_list" style="overflow: hidden;">
+                        <div style="transition: transform 0ms; -webkit-transition: transform 0ms; transform-origin: 0px 0px 0px; transform: translate(0px, 0px) translateZ(0px);">
+                            <div>
+                                <li>
+                                    <div id="list_sku" class="list_sku">
+                                        <!---->
+                                    </div>
+                                    <div class="table_choose">
+                                        <table id="table_number" class="table_number">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <label style="white-space: pre; font-size: 14px">数量</label>
+                                                    </td>
+                                                    <td>
+                                                        <div class="sku_Rule">
+                                                            <div class="Purchase">
+                                                                <label id="sku_inventory" class="sku_inventory">
+                                                                    <!--限购2件-->
+                                                                </label>
+                                                            </div>
+                                                            <div class="Purchasecon">
+                                                                <div class="box">
+                                                                    <div>
+                                                                        <input type="button" value="-">
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="tel" value="1" id="sku_number">
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="button" value="+">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </section>
+                    <li id="sku_btn_group" class="sku_btn_group group_1">
+                        <a href="javascript:;" id="btn_dialog_add_shopcart">加入购物车</a>
+                        <a href="javascript:;" id="btn_dialog_buy">立刻购买</a>
+                        <a href="javascript:;" id="btn_dialog_ok">确认</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div data-widget="tools" data-tools="tools_widget" id="tools_widget" class="tools_widget">				<div class="widget_wrap">					<ul class="tools_widget_wrap"><li>						<a href="javascript:;" id="tools_widget_goTop" class="tools_widget_goTop hidden">顶部</a>					</li><li id="tools_kfli" style="display:none;">						<a href="javascript:;" id="tolls_widget_message" class="tolls_widget_message">客服</a>					</li></ul></div></div></div>
+
+
+
+
+<script>
+     
+    APP.shareInfo.followUrl = 'http://fenxiao.weimob.com/weike/index.php?c=login&m=tologin&aid=55768187&openid=ov2WBs9xFdIUuBPNm8WRiazamVgA';//开通微客引导
+    APP.shareInfo.content = '亲爱的Irek，开通微客即可分享赚佣金！';//内容
+    APP.shareInfo.type = '40';//
+    APP.shareInfo.friendImgUrl = 'http://wx.qlogo.cn/mmopen/m8lx6fG6QIDm6fhtXEfolWYxetoDibdeaTGNqqWDVaqEjjXVtP29hFHREKNGlHFicQZgvXkQM5Yf9Y84AQRRnsrYz9m7daPyia1/0';
+       
+    setCookie("stat_openid", "ov2WBs9xFdIUuBPNm8WRiazamVgA");
+    setCookie("stat_webtype", "index");
+
+</script>
+<script src="http://statistic.weimob.com/wm.js?StatType=qudao&amp;url=http%3A%2F%2F55768187.m.weimob.com%2Fvshop%2F55768187%2FIndex%3FPageId%3D337346%26_tt%3D2%26channel%3Dmenu%5E%2523%5E5ZWG5Z%2BO6aaW6aG1&amp;stat_bid=&amp;stat_pid=55768187&amp;stat_action_seq_id=47kuZCBe0cUrChgmSWH2T6jVE4tnzd7s:menu%5e%23%5e5ZWG5Z+O6aaW6aG1:&amp;stat_webtype=index&amp;stat_module=vshop&amp;stat_time=1465567210&amp;stat_action=loadPage&amp;stat_optValue=::menu%5e%23%5e5ZWG5Z+O6aaW6aG1&amp;stat_weimobID=751cb90db8a6461f948a96328f4b680f"></script></body></html>

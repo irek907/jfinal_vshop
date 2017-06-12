@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>weixin://private/setresult/SCENE_FETCHQUEUE&amp;eyJmdW5jIjoibG9nIiwicGFyYW1zIjp7Im1zZyI6Il9ydW5PbjNyZEFwaUxpc3QgOiBtZW51OnNoYXJlOnRpbWVsaW5lLG1lbnU6c2hhcmU6YXBwbWVzc2FnZSxvblZvaWNlUmVjb3JkRW5kLG9uVm9pY2VQbGF5QmVnaW4sb25Wb2ljZVBsYXlFbmQsb25Mb2NhbEltYWdlVXBsb2FkUHJvZ3Jlc3Msb25JbWFnZURvd25sb2FkUHJvZ3Jlc3Msb25Wb2ljZVVwbG9hZFByb2dyZXNzLG9uVm9pY2VEb3dubG9hZFByb2dyZXNzLG1lbnU6c2V0Zm9udCxtZW51OnNoYXJlOndlaWJvLG1lbnU6c2hhcmU6ZW1haWwsd3hkb3dubG9hZDpzdGF0ZV9jaGFuZ2UsaGRPbkRldmljZVN0YXRlQ2hhbmdlZCxhY3Rpdml0eTpzdGF0ZV9jaGFuZ2UifSwiX19tc2dfdHlwZSI6ImNhbGwiLCJfX2NhbGxiYWNrX2lkIjoiMTAwMCJ9</title>
+<meta content="app-id=518966501" name="apple-itunes-app">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<link href="css/comm.css" rel="stylesheet" type="text/css">
+<link href="css/cartList.css" rel="stylesheet" type="text/css">
+<script src="js/jquery190.js" language="javascript" type="text/javascript"></script>
+<script src="js/numlimit.js" language="javascript" type="text/javascript"></script>
+<script src="js/Comm_wx_only.js" language="javascript" type="text/javascript"></script>
+<script> 
+/*function img_onload(){ 
+	var img_w = $('.u-Cart-img img').width();
+	var img_h = $('.u-Cart-img img').height();
+	if( img_h != img_w ){
+		if(img_h > img_w){
+			$('.u-Cart-img img').height('60px')
+			}
+		if(img_h < img_w){
+			$('.u-Cart-img img').width('60px')
+			}
+		}
+}*/
+</script>
+</head><iframe id="__WeixinJSBridgeIframe_SetResult" style="display: none;"></iframe><iframe id="__WeixinJSBridgeIframe" style="display: none;"></iframe>
+<body style="zoom: 1;">
+<section>
+  <div class="pay_content">
+  	<input id="orderId" value="0" type="hidden">
+  	
+	    <div class="address_wrap">
+	     
+	     
+		      <div class="has_address"> <a href="/product/gotoAddAddress.do?orderId=0&amp;productId=1&amp;amount=1" class="edit_address"></a>
+				<input id="addressId" type="hidden" value="108">
+		        <p id="addressee" class="receive_name">卡卡</p>
+		        <p>联系电话：<span id="phone">13788886666</span></p>
+		        <p>地址：<span id="address">山西省大同市南郊区歪歪</span></p>
+		      </div>
+	      
+	    </div>
+	
+    <article class="clearfix m-round g-Cart-list"> 
+      <a class="fl u-Cart-img" href="javascript:void(0);"> 
+      <img src="http://resource.uwan99.com/images/fenxiao/tianyixing/product/small.jpg" border="0" alt="" style="width:60px; height:60px;"></a>
+      <div class="u-Cart-r">
+        <p class="z-Cart-tt" style="width:100%">
+        	<a href="javascript:void(0);" class="gray6">天医星马黛王茶</a>
+        </p>
+        <p class="gray9">
+        	<em class="orange arial newPrice">￥198.00</em>
+        	<em class="gray arial">￥198.00</em> 
+        </p>   
+        
+        
+	        <p class="f-Cart-Other clearfix"> 
+	        	<a href="javascript:;" class="fl z-jian z-jiandis">-</a>
+	        	<input id="txtNum409" name="num" type="text" maxlength="7" value="1" class="fl z-amount">
+	       	    <a href="javascript:;" class="fl z-jia ">+</a> 
+			</p>
+		
+      </div>
+    </article>
+    
+    <p>配送方式：快递（免邮）</p>
+    
+    
+    <p>支付方式：微信支付</p>
+    <br>
+   <!--  <p>留言备注：</p>
+    <textarea class="liuyan" placeholder="说点什么吧..."></textarea> -->
+  </div>
+  <div class="pay_bottom"> 
+  	总计：<em class="orange" style="font-size:16px;">￥198.00元</em> 
+  	<a href="javascript:void(0);" onclick="pay();" class="btn orange_btn fr">提交并支付</a>
+  </div>
+</section>
+<footer class="footer"> 
+	<div class="u-ft-nav" id="fLoginInfo">
+	    <span><a class="f_home" href="/product/home.do">首页</a></span>
+		<span><a class="f_order" href="/order/myOrder.do?status=0">我的订单</a></span>
+		<span><a class="f_user" href="/user/userCenter.do">个人中心</a></span>
+	</div> 
+</footer>
+<div id="Validform_msg" style="display:none">
+  <div class="Validform_title">提示信息<a class="Validform_close" href="javascript:void(0);">×</a></div>
+  <div class="Validform_info">您还没有填写收货信息哦！</div>
+  <div class="iframe" style="height: 92px;">
+    <iframe frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
+  </div>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+<script type="text/javascript">
+$(function(){
+	if($('#txtNum409').length > 0){
+		$('.pay_bottom em').html('￥'+ (parseInt($('#txtNum409').val()) * $('.newPrice').html().replace('￥','')).toFixed(2) +'元');
+	}
+	});
+var clicked = false;
+function pay() {
+	var productType = 1;
+	var noAddress = document.getElementById('noAddress');
+	var productId= 1;
+	var amount= 1;
+	var txtNum = document.getElementById('txtNum409');
+	if (txtNum != null) {
+		amount = $("#txtNum409").val();
+	}
+	if (!clicked) {
+		
+		if (productType == 1) {
+			if (noAddress == null) {
+				clicked = true;
+				var orderId = document.getElementById('orderId').value;
+				var addressId =  document.getElementById('addressId').value;
+				var url = "/order/confirmOrder.do?orderId=" + orderId + "&productId=" + productId 
+						+ "&count=" + amount + "&addressId=" + addressId; 
+				location.href =  url;
+			}else if (noAddress != null){
+			//	$('#Validform_msg').show();
+			//	$('.Validform_close').click(function(){
+			//		$('#Validform_msg').hide();
+			//	});
+				alert('您还没有填写收货地址哦！');
+				return false;
+			}
+		} else {
+			clicked = true;
+			var orderId = document.getElementById('orderId').value;
+			var url = "/order/confirmOrder.do?orderId=" + orderId + "&productId=" + productId 
+					+ "&count=" + amount + "&addressId=0"; 
+			location.href =  url;
+		}
+	}
+}
+</script>
+
+
+</body></html>
